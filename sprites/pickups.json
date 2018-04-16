@@ -1,0 +1,30 @@
+{"frames": [
+
+{
+	"filename": "taxInc.png",
+	"frame": {"x":1,"y":1,"w":50,"h":25},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":25},
+	"sourceSize": {"w":50,"h":25},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "taxDec.png",
+	"frame": {"x":53,"y":1,"w":50,"h":25},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":25},
+	"sourceSize": {"w":50,"h":25},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "pickups.png",
+	"format": "RGBA8888",
+	"size": {"w":104,"h":27},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:cb3a04d6837037abe4b5ffe452b06dea:404982c7618b4194e424823d1beb1283:0b493ebb21a2f089d30c9be1399b2817$"
+}
+}
