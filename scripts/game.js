@@ -4,15 +4,12 @@ document.onclick = function(event){
 	if(!gameID.contains(event.target)) gameFocus = false;
 	else gameFocus = true;
 }
-var renderer = PIXI.autoDetectRenderer();
-
 //Loads textures
 PIXI.loader
 	.add([
 		"sprites/player.png",
-		"sprites/spritesheet.png",
 		"sprites/largeButtonBox.png",
-		"sprites/menuBackground.png",
+		"sprites/menuBg.jpg",
 		"sprites/exit.png",
 		"sprites/pause.png",
 		"sprites/resume.png",
@@ -82,12 +79,12 @@ function pauseMenuButton(text, texture, x, y){
 }	
 function setup(){	
 	menuContainer = new PIXI.Container();
-	menuBackground = new PIXI.Sprite(PIXI.loader.resources["sprites/menuBackground.png"].texture);
-	menuBackground.scale.x = 4;
-	menuBackground.scale.y = 4;
+	menuBackground = new PIXI.Sprite(PIXI.loader.resources["sprites/menuBg.jpg"].texture);
+	menuBackground.scale.x = 2;
+	menuBackground.scale.y = 2;
 	
 	menuPlayBut = new PIXI.Sprite(PIXI.loader.resources["sprites/largeButtonBox.png"].texture);
-	but.call(menuPlayBut, app.screen.width/2, app.screen.height*2/3);
+	but.call(menuPlayBut, app.screen.width*1/4, app.screen.height*4/5);
 	menuPlayBut.text = new PIXI.Text("PLAY", {fontFamily: "Consolas"});
 	menuPlayBut.addChild(menuPlayBut.text);
 	menuPlayBut.text.anchor.set(0.5);
