@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Econs ILP Game</title>
+	<link rel="icon" type="image/png" href="favicon.png">
+	<style type="text/css">
+		body{
+			font-family: 'Arial';
+		}
+	</style>
+</head>
+<body>
+	<div id="game" style="border: 2px black solid; width: 800px; height: 500px">
+	</div>
+	<script src="scripts/pixi.min.js"></script>
+	<script>
+		var app = new PIXI.Application({width: 800, height: 500, transparent: true});
+		document.getElementById("game").append(app.view);
+	</script>
+	<script src="scripts/class.js"></script>
+	<script src="scripts/physics.js"></script>
+	<script src="scripts/game.js"></script>
+	<div>
+		<h2>Instructions</h2>
+		<p>Press the arrow keys to move around. You lose when the public gets too angry, or when you hit a wall.<br>
+		Collect money icons to raise(green) or decrease(red) taxes.</p>
+		<h2>Game Explanation</h2>
+		<p>
+			In this game, the player acts as the government. He/she can collect pickups to change the tax rate.<br>
+			The government should consider the interests of all parties (consumer, producer and third party). If the total welfare of all parties is too far below the maximum possible welfare (attained at equlibrium point of Demand Curve and SMC), people will start to get angry. If people get too angry, the player will lose.
+			In the provided graph, the following graphs are represented as such:<br>
+			Demand Curve: Black Line<br>
+			Private Marginal Cost: Blue Line<br>
+			Private Marginal Cost(with tax): Green Line<br>
+			Social Marginal Cost: Red Line<br>
+			Happiness of all parties: Blue area - Red area
+		</p>
+		<h2>Storyline (to be added)</h2>
+	</div>
+</body>
+</html>
